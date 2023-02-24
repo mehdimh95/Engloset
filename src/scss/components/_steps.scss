@@ -13,11 +13,14 @@
   .btn {
     font-family: IRANSans;
     border-radius: 25px;
-    color: var(--bs-white);
     font-size: 12px;
     line-height: 16px;
     letter-spacing: -0.47px;
     white-space: nowrap;
+
+    &:not(.text-primary) {
+      color: var(--bs-white) !important;
+    }
 
     @include media-breakpoint-up(lg) {
       font-size: 21px;
