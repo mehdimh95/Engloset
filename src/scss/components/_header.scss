@@ -1,9 +1,10 @@
 .header {
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: solid 1px var(--bs-primary);
 
   @include media-breakpoint-up(lg) {
-    padding: 18px 0 0 0;
+    padding-top: 18px;
     border-bottom: none;
   }
 
