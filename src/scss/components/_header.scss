@@ -1,5 +1,11 @@
 .header {
   padding: 10px;
+  border-bottom: solid 1px var(--bs-primary);
+
+  @include media-breakpoint-up(lg) {
+    padding: 18px 0 0 0;
+    border-bottom: none;
+  }
 
   .container {
     padding: 8px;
@@ -33,9 +39,5 @@
         background-color: var(--faded-blue);
       }
     }
-  }
-
-  @include media-breakpoint-up(lg) {
-    padding: 18px 0 0 0;
   }
 }
