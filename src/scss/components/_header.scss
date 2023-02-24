@@ -1,0 +1,41 @@
+.header {
+  padding: 10px;
+
+  .container {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--bs-primary);
+    background-image: url("../assets/images/header-bg.png");
+    background-size: auto 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include media-breakpoint-up(lg) {
+      border-radius: 10px;
+      background-color: var(--bs-white);
+      background-position: 20% center;
+      padding: 24px 30px;
+    }
+
+    .avatar {
+      width: 54px;
+      aspect-ratio: 1;
+      font-size: 21px;
+      line-height: 28px;
+      color: var(--bs-primary);
+      background-color: var(--light-gray);
+
+      @include media-breakpoint-up(lg) {
+        width: 78px;
+        font-size: 57px;
+        line-height: 76px;
+        color: var(--bs-white);
+        background-color: var(--faded-blue);
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 18px 0 0 0;
+  }
+}

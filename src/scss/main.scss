@@ -1,1 +1,14 @@
+:root {
+  --light-gray: #f9fbfd;
+  --gray: #f7f7f7;
+  --faded-blue: #69adcd;
+}
+
 @import "bootstrap";
+
+/* Components */
+@import "components/header";
+
+body {
+  background-color: var(--gray);
+}
