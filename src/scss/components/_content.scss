@@ -1,0 +1,11 @@
+.content {
+  padding: 9px 15px;
+  border-radius: 5px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 10px;
+    padding: 56px 40px;
+    background-color: var(--bs-white);
+    border-radius: 10px;
+  }
+}
