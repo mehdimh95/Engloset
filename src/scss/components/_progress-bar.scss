@@ -1,0 +1,21 @@
+.progress-wrapper {
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    width: initial;
+    flex-grow: 1;
+  }
+
+  .progress {
+    @include media-breakpoint-up(lg) {
+      --bs-progress-height: 8px;
+      --bs-progress-bar-color: transparent;
+    }
+  }
+
+  span {
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--warm-gray);
+  }
+}
