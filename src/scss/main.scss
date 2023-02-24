@@ -3,6 +3,7 @@
   --warm-gray: #8f8f8f;
   --gray: #f7f7f7;
   --faded-blue: #69adcd;
+  --marigold: #ffc107;
 }
 
 @import "bootstrap";
@@ -11,6 +12,7 @@
 @import "components/header";
 @import "components/content";
 @import "components/progress-box";
+@import "components/progress-circle.scss";
 
 body {
   background-color: var(--gray);
