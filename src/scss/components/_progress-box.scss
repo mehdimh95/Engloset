@@ -1,0 +1,26 @@
+.progress-box {
+  border: 1px solid var(--bs-primary);
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--bs-white);
+
+  @include media-breakpoint-up(lg) {
+    border-radius: 10px;
+    padding: 14px;
+    background-color: var(--gray);
+  }
+
+  .btn {
+    border-radius: 25px;
+    color: var(--bs-white);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.47px;
+    white-space: nowrap;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 21px;
+      line-height: 28px;
+    }
+  }
+}
