@@ -5,6 +5,6 @@ export default {
   plugins: [
     handlebars({
       partialDirectory: resolve(__dirname, "src/partials"),
-    }),
+    })
   ],
 };
