@@ -1,0 +1,168 @@
+.report-modal {
+    &.modal-fade {
+        direction: rtl;
+        background-color: var(--bs-white);
+
+        @include media-breakpoint-up(lg) {
+            direction: rtl;
+            background-color: transparent;
+        }
+    }
+
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: var("15rem")
+    }
+
+    .close {
+        width: 39px;
+        height: 39px;
+        background-color: var(--deep-lilac);
+        border-radius: 50%;
+        border-color: transparent;
+        color: var(--bs-white);
+        margin: 10px 188px 20px 188px;
+        font-size: xx-large;
+
+        @include media-breakpoint-up(lg) {
+            width: 64px;
+            height: 64px;
+            margin: 10px 44px 20px;
+        }
+    }
+
+    .modal-header {
+        background-color: var(--deep-lilac);
+        color: var(--bs-white);
+        font-size: 15px;
+        height: 42px;
+        line-height: 20px;
+
+        i {
+            font-size: 21px;
+            color: var(--bs-white);
+        }
+
+        @include media-breakpoint-up(lg) {
+            background-color: var(--deep-lilac);
+            color: var(--bs-white);
+            font-size: 30px;
+            height: 66px;
+
+            i {
+                font-size: 40px;
+                color: var(--bs-white);
+            }
+        }
+    }
+
+    .modal-body {
+        padding: 0px;
+        padding-bottom: 20px;
+
+        .modal-information {
+            color: var(--warm-gray);
+            font-size: 12px;
+            gap: 4px;
+
+            i {
+                font-size: 14px;
+            }
+        }
+
+        .report-item {
+
+            margin: 12px 4px 0 4px;
+            border-radius: 5px;
+            border: solid 1px var(--wisteria);
+
+            .report-item-header {
+                background-color: var(--gray);
+                padding: 8px;
+
+                .modal-checkbox {
+                    font-size: 12px;
+                    color: var(--deep-lilac);
+
+                    .form-check {
+                        font-size: 16px;
+                    }
+                }
+
+                .report-item-player {
+                    font-size: 15px;
+                    gap: 4px;
+                    color: var(--warm-grey-Two);
+
+                    i {
+                        font-size: 22px;
+                        color: var(--greyish);
+                    }
+                }
+            }
+
+            .footer {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+
+                label {
+                    color: var(--deep-lilac);
+                    font-family: IRANSans;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-align: center;
+                }
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    color: var(--warm-grey-Two);
+                    font-family: IRANSans;
+                    line-height: 20px;
+                    font-size: 15px;
+
+                    i {
+                        font-size: 38px;
+                        color: var(--light-teal);
+                    }
+                }
+            }
+        }
+    }
+
+    .modal-button {
+        flex-wrap: wrap;
+
+        button {
+            font-family: IRANSans;
+            width: 335px;
+            height: 46px;
+            border-radius: 5px;
+            background-color: var(--jade-green);
+            font-size: 23px;
+            line-height: 31px;
+            color: var(--bs-white);
+            margin: 23px 20px;
+            
+            @include media-breakpoint-up(lg) {
+                width: 235px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                i {
+                    font-size: 35px;
+                }
+            }
+        }
+
+        &:active {
+            background-color: var(--bs-white);
+            color: var(--jade-green);
+            border-color: 1px solid var(--deep-lilac);
+        }
+    }
+}
