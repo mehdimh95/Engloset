@@ -1,101 +1,113 @@
-.modal-fade {
-    direction: rtl;
-    background-color: var(--bs-white);
-
-    @include media-breakpoint-up(lg) {
+.review-modal {
+    &.modal-fade {
         direction: rtl;
-        background-color: transparent;
+        background-color: var(--bs-white);
+
+        @include media-breakpoint-up(lg) {
+            direction: rtl;
+            background-color: transparent;
+        }
     }
-}
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: var("15rem")}
-  
-.close {
-    width: 39px;
-    height: 39px;
-    background-color: var(--tomato);
-    border-radius: 50%;
-    border-color: transparent;
-    color: var(--bs-white);
-    margin: 10px 188px 20px 188px;
-    font-size: xx-large;
 
-    @include media-breakpoint-up(lg) {
-        width: 64px;
-        height: 64px;
-        margin: 10px 44px 20px;
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: var("15rem")
     }
-}
 
-.modal-header {
-    background-color: var(--tomato);
-    color: var(--bs-white);
-    font-size: 15px;
-    height: 42px;
-    line-height: 20px;
-
-    i {
-        font-size: 21px;
+    .close {
+        width: 39px;
+        height: 39px;
+        background-color: var(--tomato);
+        border-radius: 50%;
+        border-color: transparent;
         color: var(--bs-white);
+        margin: 10px 188px 20px 188px;
+        font-size: xx-large;
+
+        @include media-breakpoint-up(lg) {
+            width: 64px;
+            height: 64px;
+            margin: 10px 44px 20px;
+        }
     }
 
-    @include media-breakpoint-up(lg) {
+    .modal-header {
         background-color: var(--tomato);
         color: var(--bs-white);
-        font-size: 30px;
-        height: 66px;
+        font-size: 15px;
+        height: 42px;
+        line-height: 20px;
 
         i {
-            font-size: 40px;
+            font-size: 21px;
             color: var(--bs-white);
         }
+
+        @include media-breakpoint-up(lg) {
+            background-color: var(--tomato);
+            color: var(--bs-white);
+            font-size: 30px;
+            height: 66px;
+
+            i {
+                font-size: 40px;
+                color: var(--bs-white);
+            }
+        }
     }
-}
 
-.modal-body {
-    height: 300px;
-    width: 300px;
+    .modal-body {
+        height: 300px;
+        width: 300px;
 
-    img {
-        margin: 20px 0 12px;
-    }
-
-    @include media-breakpoint-up(lg) {
-        height: 430px;
-        width: 350px;
-    }
-}
-
-.modal-button {
-    flex-wrap: wrap;
-
-    button {
-        font-family: IRANSans;
-        width: 159px;
-        height: 33px;
-        font-size: 16px;
-        line-height: 21px;
-        background-color: var(--tomato);
-        border-radius: 15px;
-        color: var(--bs-white);
-        margin: 8px 0px;
-
-        &:active {
-            background-color: var(--bs-white);
-            color: var(--tomato);
-            border-color: 1px solid var(--tomato);
+        img {
+            margin: 20px 0 12px;
         }
 
+        @include media-breakpoint-up(lg) {
+            height: 430px;
+            width: 350px;
+        }
     }
-       @include media-breakpoint-up(lg){
-button{
-    width: 235px;
-  height: 50px;
-}
 
+    .modal-button {
+        flex-wrap: wrap;
 
-       }
+        button {
+            font-family: IRANSans;
+            width: 159px;
+            height: 33px;
+            font-size: 16px;
+            line-height: 21px;
+            background-color: var(--tomato);
+            border-radius: 15px;
+            color: var(--bs-white);
+            margin: 8px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
 
+            i {
+                font-size: 22px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                width: 235px;
+                height: 50px;
+                gap: 10px;
+
+                i {
+                    font-size: 35px;
+                }
+            }
+
+            &:active {
+                background-color: var(--bs-white);
+                color: var(--tomato);
+                border-color: 1px solid var(--tomato);
+            }
+        }
+    }
 }
