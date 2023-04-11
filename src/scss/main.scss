@@ -1,0 +1,10 @@
+:root {
+  --light-gray: #f9fbfd;
+}
+
+@import 'bootstrap';
+@import 'remixicon/fonts/remixicon';
+
+body {
+  background-color: var(--gray);
+}
