@@ -8,6 +8,8 @@
 @import 'remixicon/fonts/remixicon';
 
 /* Components */
+@import 'components/navbar';
+
 body {
-  background-color: var(--gray);
+  background-color: var(--white);
 }
