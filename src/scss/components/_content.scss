@@ -1,6 +1,8 @@
 .container {
   background-color: var(--gray);
   text-align: right;
+  border: 1px solid var(--faded-blue);
+  border-radius: 12px;
 }
 .buttons {
   button {
