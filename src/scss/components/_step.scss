@@ -1,0 +1,24 @@
+.buttons {
+  button {
+    line-height: 11px;
+    font-size: 8px;
+    background-color: var(--faded-blue1);
+    border: 1px solid var(--faded-blue1);
+    color: var(--warm-grey);
+    i {
+      font-size: 16px;
+      color: var(--warm-yellow);
+    }
+  }
+  button:focus,
+  button:focus-visible {
+    font-size: 8px;
+    background-color: transparent;
+    border: 1px solid var(--faded-blue1);
+    color: var(--warm-grey);
+    i {
+      font-size: 16px;
+      color: var(--warm-yellow);
+    }
+  }
+}
