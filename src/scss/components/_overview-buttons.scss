@@ -1,0 +1,37 @@
+.overview-buttons {
+  button {
+    font-size: 12px;
+    line-height: 16px;
+    background-color: var(--faded-blue);
+    border: 1px solid var(--faded-blue);
+    color: var(--white);
+    border-radius: 15px;
+    i {
+      font-size: 16px;
+      color: var(--warm-yellow);
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+      line-height: 27px;
+      border-radius: 5px;
+    }
+  }
+  button:focus,
+  button:focus-visible {
+    font-size: 12px;
+    line-height: 16px;
+    background-color: transparent;
+    border: 1px solid var(--faded-blue);
+    color: var(--faded-blue);
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+      line-height: 27px;
+      border-radius: 5px;
+    }
+  }
+  &:active {
+    background-color: transparent;
+    border: 1px solid var(--faded-blue);
+    color: var(--faded-blue);
+  }
+}
