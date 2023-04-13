@@ -9,6 +9,14 @@
       font-size: 16px;
       color: var(--warm-yellow);
     }
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+      line-height: 27px;
+
+      i {
+        font-size: 35px;
+      }
+    }
   }
   button:focus,
   button:focus-visible {
@@ -19,6 +27,19 @@
     i {
       font-size: 16px;
       color: var(--warm-yellow);
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+      line-height: 27px;
+
+      i {
+        font-size: 35px;
+      }
+    }
+    &:active {
+      background-color: transparent;
+      border: 1px solid var(--faded-blue1);
+      color: var(--warm-grey);
     }
   }
 }
