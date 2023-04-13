@@ -1,0 +1,34 @@
+.items {
+  border: 1px solid var(--faded-blue1);
+}
+
+.item-button,
+.item-buttons {
+  border: none;
+  background-color: var(--warm-grey-Two);
+  i {
+    color: var(--white);
+    line-height: 1.5;
+  }
+}
+.item-button:nth-child(1) {
+  background-color: var(--tomato);
+}
+.item-buttons:nth-child(3) {
+  background-color: var(--warm-yellow);
+}
+.move-forward-one-step {
+  font-size: 12px;
+  :nth-child(1) {
+    color: var(--blue-navy);
+  }
+  :nth-child(2) {
+    color: var(--yellow);
+  }
+  :nth-child(3) {
+    color: var(--gary1);
+  }
+  :nth-child(4) {
+    color: var(--tomato1);
+  }
+}
