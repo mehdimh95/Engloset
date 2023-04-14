@@ -13,7 +13,9 @@
     @include media-breakpoint-up(lg) {
       font-size: 20px;
       line-height: 27px;
-
+      color: var(--warm-grey-three);
+      border: 1px solid var(--warm-grey-three);
+      background-color: var(--gray);
       i {
         font-size: 35px;
       }
