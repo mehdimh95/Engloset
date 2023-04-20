@@ -1,5 +1,7 @@
 .buttons {
   button {
+    display: flex;
+    flex-direction: row-reverse;
     padding: 6px;
     line-height: 11px;
     font-size: 8px;
@@ -11,6 +13,8 @@
       color: var(--warm-yellow);
     }
     @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-direction: row;
       font-size: 20px;
       line-height: 27px;
       color: var(--warm-grey-three);

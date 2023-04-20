@@ -18,7 +18,17 @@
 @import 'remixicon/fonts/remixicon';
 
 /* Components */
-@import 'components/navbar';
+.navbar {
+	 direction: rtl;
+}
+ .nav-item {
+	 border: solid 1px var(--faded-blue);
+	 padding: 9px 30px;
+}
+ .nav-item a {
+	 font-size: 14px;
+	 line-height: 10px;
+}
 @import 'components/content';
 @import 'components/items';
 @import 'components/step';
